@@ -1,10 +1,12 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { Toaster } from 'react-hot-toast'
 
-export default function Document() {
+export default function Document () {
   return (
-    <Html lang="en">
+    <Html lang='en' data-theme='corporate'>
       <Head />
       <body>
+        <Toaster />
         <Main />
         <NextScript />
       </body>
