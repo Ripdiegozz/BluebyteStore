@@ -152,7 +152,7 @@ const ProductDetails = ({ product, relatedProducts }) => {
             {
               image.map((img, i) => {
                 return (
-                  <Image src={urlFor(img).url()} height={100} width={100} key={img._key} onClick={() => setIndex(i)} className='border-2 cursor-pointer object-fit h-[100px] w-[100px] bg-gray-200 p-2 rounded-md' />
+                  <Image src={urlFor(img).url()} alt={img._key} height={100} width={100} key={img._key} onClick={() => setIndex(i)} className='border-2 cursor-pointer object-fit h-[100px] w-[100px] bg-gray-200 p-2 rounded-md' />
                 )
               })
             }
