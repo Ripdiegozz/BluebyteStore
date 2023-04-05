@@ -38,7 +38,22 @@ export const StateContext = ({ children }) => {
       setCartItems([...cartItems, { ...product }])
     }
 
-    toast.success(`${qty} ${product.name} added to the cart.`)
+    toast(`${qty} ${product.name} added to the cart.`, {
+      duration: 2000,
+      position: 'bottom-center',
+      // Custom Icon
+      icon: '🛒',
+      // Change colors of success/error/loading icon
+      iconTheme: {
+        primary: '#fff',
+        secondary: '#80c080'
+      },
+      // Aria
+      ariaProps: {
+        role: 'status',
+        'aria-live': 'polite'
+      }
+    })
   }
 
   const onRemove = (product) => {

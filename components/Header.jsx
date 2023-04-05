@@ -53,7 +53,7 @@ const Header = () => {
               </div>
             </label>
             {totalQuantities === 0 &&
-              <div tabIndex={0} className='mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow'>
+              <div tabIndex={0} className='mt-3 card card-compact dropdown-content w-[18rem] bg-base-100 shadow'>
                 <div className='card-body w-[350px] bg-base-100'>
                   <span className='font-bold text-lg'>Your cart is empty :(</span>
                   <AiOutlineShopping size={80} className='text-center mx-auto' />
@@ -64,14 +64,14 @@ const Header = () => {
                 </div>
               </div>}
             {totalQuantities > 0 &&
-              <div tabIndex={0} className='mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow'>
+              <div tabIndex={0} className='mt-3 card card-compact dropdown-content w-[18rem] bg-base-100 shadow'>
                 <div className='card-body w-[350px] bg-base-100'>
                   <span className='font-bold text-lg'>{totalQuantities} Items</span>
                   <ul>
                     {
                       cartItems.map((item) => {
                         return (
-                          <li className='flex items-center gap-4' key={item._id}>
+                          <li className='flex items-center gap-4 pt-4' key={item._id}>
                             <img src={urlFor(item.image[0]).url()} alt={item.name} className='h-14 w-16 rounded object-fit' />
                             <div>
                               <h3 className='text-sm text-gray-900'>{item.name}</h3>
