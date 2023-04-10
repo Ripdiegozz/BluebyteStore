@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bluebyte Ecommerce
 
-## Getting Started
+Este proyecto es un sitio web de comercio electrónico. Utiliza HTML, CSS, TailwindCSS, JavaScript, React.js, React Hooks, Next.js, Sanity y Stripe. El proyecto cuenta con un carrito de compras funcional, un selector de cantidad de productos y pagos realizados a través de Stripe.
 
-First, run the development server:
+## Requisitos
+
+Para ejecutar este proyecto, necesitarás tener instalado Node.js y npm en tu computadora.
+
+## Instalación
+
+1. Clona el repositorio en tu computadora:
 
 ```bash
+git clone https://github.com/Ripdiegozz/BluebyteStore.git
+```
+2. Entra al directorio del proyecto:
+
+```bash
+cd BluebyteStore
+```
+3. Instala las dependencias:
+
+```bash
+npm install
+```
+4. Crea un archivo .env en el directorio raíz y añade las siguientes variables de entorno:
+
+```makefile
+NEXT_PUBLIC_SANITY_URL=<tu-api-key-de-Sanity>
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=<tu-public-key-de-Stripe>
+NEXT_PUBLIC_STRIPE_SECRET_KEY =<tu-clave-private-key-de-Stripe>
+```
+5. Ejecuta el proyecto:
+```arduino
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Este proyecto está desarrollado utilizando las siguientes tecnologías:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- HTML: lenguaje de marcado para la estructura del sitio web
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- CSS: lenguaje de estilos para dar diseño y apariencia al sitio web
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- JavaScript: lenguaje de programación para agregar interactividad al sitio web
 
-## Learn More
+- React.js: biblioteca de JavaScript para construir interfaces de usuario
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js: framework de React.js para construir aplicaciones web de una sola página (SPA)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Sanity: plataforma de contenido que permite gestionar el contenido del sitio web
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Stripe: plataforma de pagos en línea que permite procesar pagos en el sitio web
 
-## Deploy on Vercel
+## Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Búsqueda de productos por nombre, categoría y precio
+2. Selección de productos y agregado al carrito de compras con selector de cantidad
+3. Vista del carrito de compras con resumen de productos y precios
+4. Proceso de pago utilizando Stripe para procesar el pago y finalizar la compra
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contacto
+
+Si tienes alguna pregunta, sugerencia o comentario sobre este proyecto, no dudes en contactarme en el siguiente correo electrónico: dagadev@proton.me.
+
+*¡Gracias por utilizar mi sitio web!*
