@@ -29,7 +29,7 @@ const Products = ({ data }) => {
           <button className='px-4 py-1 border-2 hover:border-black transition-colors'>Laptops</button>
         </Link>
         <Link href='/products/graphic-cards'>
-          <button className='px-4 py-1 border-2 hover:border-black transition-colors'>Graphic cards</button>
+          <button className='px-4 py-1 border-2 hover:border-black transition-colors'>Graphics cards</button>
         </Link>
         <Link href='/products/motherboards'>
           <button className='px-4 py-1 border-2 hover:border-black transition-colors'>Motherboards</button>
@@ -56,7 +56,7 @@ const Products = ({ data }) => {
 }
 
 export async function getServerSideProps () {
-  const query = '*[_type == "product"]'
+  const query = '*[_type == "product" && category == "Headphones"]'
   const data = await client.fetch(query)
 
   return {

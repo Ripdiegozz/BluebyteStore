@@ -56,7 +56,7 @@ const Products = ({ data }) => {
 }
 
 export async function getServerSideProps () {
-  const query = '*[_type == "product"]'
+  const query = '*[_type == "product" && category == "Laptops"]'
   const data = await client.fetch(query)
 
   return {
