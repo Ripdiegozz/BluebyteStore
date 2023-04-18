@@ -134,7 +134,7 @@ const Header = () => {
           <div className='dropdown dropdown-end'>
             <label tabIndex={0} className='btn btn-ghost btn-circle avatar'>
               <div className='w-10 rounded-full'>
-                <img src='https://cdn.discordapp.com/avatars/576225400854675476/1cad831b797ee36d597c253c832012c9.webp?size=128' />
+                <img src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg' />
               </div>
             </label>
             <ul tabIndex={0} className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
